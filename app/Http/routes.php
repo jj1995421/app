@@ -24,3 +24,6 @@ Route::controller('/admin/user','UserController');
 
 //后台分类管理
 Route::controller('/admin/cate','CateController');
+
+//后台文章管理
+Route::controller('/admin/article','ArticleController');

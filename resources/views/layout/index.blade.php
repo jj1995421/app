@@ -248,8 +248,8 @@
                     <li>
                         <a href="#"><i class="icon-list"></i> 文章管理</a>
                         <ul class="closed">
-                            <li><a href="{{url('/admin/article/add')}}">分类添加</a></li>
-                            <li><a href="{{url('/admin/article/index')}}">分类列表</a></li>
+                            <li><a href="{{url('/admin/article/add')}}">文章添加</a></li>
+                            <li><a href="{{url('/admin/article/index')}}">文章列表</a></li>
                         </ul>
                     </li>
                 </ul>
