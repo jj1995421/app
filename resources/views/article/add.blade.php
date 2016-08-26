@@ -66,7 +66,11 @@
 		</div>
 	</form>
 	<script type="text/javascript">
-    var ue = UE.getEditor('editor');
+    var ue = UE.getEditor('editor',{
+    	toolbars: [
+			    ['fullscreen', 'source', 'undo', 'redo', 'bold','simpleupload']
+			]
+    });
 	</script>
 </div>    	
 </div>

@@ -32,7 +32,7 @@
 			<div class="mws-form-row">
 				<label class="mws-form-label">文章描述</label>
 				<div class="mws-form-item">
-					<textarea rows="" cols="" value="{{$article['descript']}}" class="small" name="descript"></textarea>
+					<textarea rows="" cols="" value="{{$article['descript']}}" class="small" name="descript">{{$article['descript']}}</textarea>
 				</div>
 			</div>
 			<div class="mws-form-row">
@@ -53,7 +53,7 @@
 			<div class="mws-form-row">
 				<label class="mws-form-label">文章主图</label>
 				<div class="mws-form-item">
-				<img src="{{$article['pic']}}" alt="">
+				<img src="{{$article['pic']}}" width="200" alt="">
 					<input type="file" class="small" name="pic">
 				</div>
 			</div>
@@ -67,7 +67,7 @@
 		<div class="mws-button-row">
 			{{csrf_field()}}
 			<input type="hidden" name="id" value="{{$article['id']}}">
-			<input type="submit" value="添加" class="btn btn-danger">
+			<input type="submit" value="更新" class="btn btn-danger">
 			<input type="reset" value="重置" class="btn ">
 		</div>
 	</form>

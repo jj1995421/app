@@ -27,3 +27,7 @@ Route::controller('/admin/cate','CateController');
 
 //后台文章管理
 Route::controller('/admin/article','ArticleController');
+
+//后台登录页面
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');

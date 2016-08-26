@@ -196,6 +196,7 @@ return [
 
     ],
 
-    'upload_dir' =>'./u/'.date('Ymd').'/'
+    'upload_dir' =>'./u/'.date('Ymd').'/',
+    'webname' => '海昏侯官网'
 
 ];
