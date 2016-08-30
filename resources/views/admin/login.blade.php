@@ -19,7 +19,7 @@
 
 <link rel="stylesheet" type="text/css" href="/ad/css/mws-theme.css" media="screen">
 
-<title>{{config('app.webname')}} - 登 陆</title>
+<title>{{config('app.webname')}} - 登陆</title>
 
 </head>
 
@@ -27,18 +27,18 @@
 
     <div id="mws-login-wrapper">
         <div id="mws-login">
-            <h1>Login</h1>
+            <h1>登陆</h1>
             <div class="mws-login-lock"><i class="icon-lock"></i></div>
             <div id="mws-login-form">
-                 @if (count($errors) > 0)
-                    <div class="mws-form-message error">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                    </div>
-                @endif
+             @if (count($errors) > 0)
+            <div class="mws-form-message error">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+            </div>
+            @endif
                 <form class="mws-form" action="{{url('admin/login')}}" method="post">
                     <div class="mws-form-row">
                         <div class="mws-form-item">
@@ -54,14 +54,13 @@
                         <ul class="mws-form-list inline">
                             <li>
                                 <input id="remember" type="checkbox"> 
-                                <label for="remember">记住密码</label>
+                                <label for="remember">记住我</label>
                             </li>
                         </ul>
                     </div>
                     <div class="mws-form-row">
-                    {{csrf_field()}}
-                        <input type="submit" value="登陆" class="btn btn-success mws-login-button">
-                    }
+                         {{csrf_field()}}
+                        <input type="submit" value="Login" class="btn btn-success mws-login-button">
                     </div>
                 </form>
             </div>
@@ -76,7 +75,6 @@
     <!-- jQuery-UI Dependent Scripts -->
     <script src="/ad/jui/js/jquery-ui-effects.min.js"></script>
 
-    <!-- Plugin Scripts -->
 
     <!-- Login Script -->
     <script src="/ad/js/core/login.js"></script>

@@ -46,7 +46,7 @@ class UserController extends Controller
 
          //提取部分参数
          $data = $request->only(['username','password','email']);
-         $data['password'] = Hash::make($data['password']);   
+         $data['password'] = Hash::make($data['password']);  
          $data['token']  = str_random(50);  
          //执行数据的添加操作
          $res = DB::table('users')->insert($data);
