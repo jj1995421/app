@@ -39,6 +39,15 @@
                     </ul>
             </div>
             @endif
+             @if(session('error'))
+            <div class="mws-form-message error">
+                {{session('error')}}
+            </div>
+                @endif
+
+                @yield('content')
+            </div>
+
                 <form class="mws-form" action="{{url('admin/login')}}" method="post">
                     <div class="mws-form-row">
                         <div class="mws-form-item">
@@ -53,7 +62,7 @@
                     <div id="mws-login-remember" class="mws-form-row mws-inset">
                         <ul class="mws-form-list inline">
                             <li>
-                                <input id="remember" type="checkbox"> 
+                                <input name="remem" value="1" id="remember" type="checkbox"> 
                                 <label for="remember">记住我</label>
                             </li>
                         </ul>
