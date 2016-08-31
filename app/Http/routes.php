@@ -31,3 +31,7 @@ Route::group(['middleware'=>'login'],function(){
 //后台登录页面
 Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
+
+
+//前台首页
+Route::get('/index','HomeController@index');
