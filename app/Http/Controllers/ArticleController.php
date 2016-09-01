@@ -103,4 +103,16 @@ class ArticleController extends Controller
         return back()->with('error','删除失败');
     }
     }
+
+    //前台文章显示
+    public function show($id)
+    {
+        //读取指定id的文章信息
+        $arcs = DB::table('articles')
+        ->where('id','=',$id)
+        ->first();
+
+        //展现内容
+        return view('article.show');
+    }
 }

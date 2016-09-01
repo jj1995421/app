@@ -35,3 +35,9 @@ Route::post('/admin/login','LoginController@dologin');
 
 //前台首页
 Route::get('/index','HomeController@index');
+
+//验证码显示的路由
+Route::get('/vcode','CommonController@createVcode');
+
+//前台文章显示
+Route::get('post-{id}','ArticleController@show');
