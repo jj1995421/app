@@ -29,3 +29,14 @@
 .channel_box .channel_tit{margin-bottom:10px;font-weight:bold;}
 .channel_box .channel_de span{margin-right:25px;}
 .channel_box .channel_de span a:hover{color:red;}
+/*详情页面*/
+.p_content{margin-top:10px;padding-left:10px;}
+.p_content .title{color:#433b70;font-size:20px;font-weight:bold;padding-left: 7px;}
+.xin_ti{color:gray;border-bottom:1px solid #ccc;  font-size: 12px;height:35px;line-height:35px;padding-left: 7px;}
+.xin_ti span{display:inline-block;min-width:100px;float:left;margin-right:10px;}
+.content_detail{padding-top: 15px;line-height: 25px;width: 96%;margin: 0 auto;min-height:400px;padding-bottom:20px;border-bottom:1px solid #ccc;}
+.content_detail img{max-width:600px;}
+.other_new{margin-bottom:20px;margin-top:10px;}
+.other_new p{padding-left:20px;line-height:25px;}
+.other_new a{font-size:13px;}
+.other_new a:hover{color:rgb(54, 148, 240);}

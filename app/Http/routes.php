@@ -40,4 +40,10 @@ Route::get('/index','HomeController@index');
 Route::get('/vcode','CommonController@createVcode');
 
 //前台文章显示
-Route::get('post-{id}','ArticleController@show');
+Route::get('/p_detail-{id}','ArticleController@show');
+
+//前台业务介绍页
+Route::get('/business','HomeController@business');
+
+//前台新闻列表页
+Route:get('/news_list','HomeController@news');

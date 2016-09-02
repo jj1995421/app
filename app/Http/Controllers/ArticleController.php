@@ -22,7 +22,7 @@ class ArticleController extends Controller
     {
         //处理数据
         $data = $this->dealRequest($request);
-       $data['created_at'] = date('Y-m-d H:i:s');
+       $data['created_at'] = date('Y-m-d');
        //插入数据库
        if(DB::table('articles')->insert($data)){
         return redirect('/admin/article/index')->with('success','添加成功');
@@ -113,6 +113,6 @@ class ArticleController extends Controller
         ->first();
 
         //展现内容
-        return view('article.show');
+        return view('home.p_detail',['arcs'=>$arcs]);
     }
 }

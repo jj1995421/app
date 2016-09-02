@@ -5,7 +5,7 @@
 .nav ul li{float:left;width:100px;height:53px;line-height:53px;text-align: center;cursor:pointer;}
 .nav ul li a{color:#fff;}
 /*主体部分*/
-.wrapper{width:1000px;margin:0 auto;margin-top:20px;}
+.wrapper{width:1000px;margin:0 auto;margin-top:20px;overflow:auto;}
 .wrapper a{color:#5E5D5D;}
 .news_l{width:77%;min-height:704px;float:left;margin-bottom:10px;}
 .news_r{width:22%;height:704px;float:left;  margin-left: 5px;border:1px solid #ccc;}
@@ -39,11 +39,11 @@
 .dailynews2 ul li:hover{color:red;}
 
 /*第一层右侧*/
-.annouce{width:220px;height:220px;border-bottom:1px solid #ccc;border-top:5px solid #ccc;color:#3B3D3F;}
+.annouce{width:220px;height:220px;border-top:5px solid #ccc;color:#3B3D3F;}
 .annouce_title{text-align:center;font-size:16px;margin-top:5px;}
 .annouce ul li{padding:0 1% 0 1%;width:90%;height:26px;line-height:26px;margin:0 auto;overflow:hidden;cursor:pointer;}
 .annouce ul li:hover{color:red;}
-.news_r_box{height:240px;border-bottom:1px solid #ccc;cursor:pointer;}
+.news_r_box{height:240px;cursor:pointer;}
 .news_r_box img{width:100%;}
 .ad{width:100%;height:72px;margin-bottom:5px;float:left;}
 .ad img{width:100%;}
@@ -78,17 +78,17 @@
 .ad1{width:998px;float:left;height:115px;margin:9px 0 9px 0;border:1px solid #ccc;}
 /*第三层*/
 .layer_thr{width:100%;heighT:275px;float:left;}
-.layer_thr .service{width:220px;heighT:100%;background:#DCDDDD;float:left;}
+.layer_thr .service{width:217px;heighT:100%;background:#DCDDDD;float:left;}
 .layer_thr .service ul{width:150px;margin:0 auto;margin-top: 5px;}
-.layer_thr .service ul li{width:150px;height:38px;line-height:38px;font-size:20px;float:left;background:#3E9EDD;margin:9px auto;color:#fff;text-align:center;}
+.layer_thr .service ul li{width:150px;height:38px;line-height:38px;font-size:20px;float:left;background:#3E9EDD;margin:6px auto;color:#fff;text-align:center;}
 .layer_thr .service ul li a{color:#fff;}
 .layer_thr .map{float:left;width:778px;height:100%;margin-left:2px;}
 .layer_thr .map .tit {height:30px;line-height:30px;padding-left:8px;}
-.layer_thr .map .tit span{margin:0 2px 0 2px;}
+.layer_thr .map .tit span{margin:0 10px 0 15px;}
 .layer_thr .map .pos ul li{width:20px;margin:5px auto;float:left;}
 .layer_thr .yingye{float:left;width:192px;height:89%;}
 .yingye img{width:100%;height:100%;}
 .layer_thr .maps{float:left;width:585px;height:243px;}
 /*底部*/
-.footer{width:1000px;height:85px;margin:0 auto;float:left;padding-top:35px;line-height: 25px;  font-size: 13px;}
+.footer{width:1000px;height:85px;margin:0 auto;padding-top:35px;line-height: 25px;  font-size: 13px;}
 .footer_line{width:100%;height:13px;background:#959595;float:left;}
