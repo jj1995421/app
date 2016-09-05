@@ -20,9 +20,9 @@
 <div class="nav">
     <ul>
         <li><a href="{{url('/index')}}" >首页</a></li>
-        <li><a href="" target="_blank">新闻动态</a></li>
+        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
         <li><a href="" target="_blank">公司概况</a></li>
-        <li><a href="{{url('/post')}}" target="_blank">业务介绍</a></li>
+        <li><a href="{{url('/business')}}" target="_blank">业务介绍</a></li>
         <li><a href="" target="_blank">通知公告</a></li>
         <li><a href="" target="_blank">用户服务</a></li>
         <li><a href="" target="_blank">企业文化</a></li>

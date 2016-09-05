@@ -25,9 +25,9 @@
 <div class="nav">
     <ul>
         <li><a href="{{url('/index')}}" >首页</a></li>
-        <li><a href="" target="_blank">新闻动态</a></li>
+        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
         <li><a href="" target="_blank">公司概况</a></li>
-        <li><a href="" target="">业务介绍</a></li>
+        <li><a href="{{url('/business')}}" target="">业务介绍</a></li>
         <li><a href="" target="_blank">通知公告</a></li>
         <li><a href="" target="_blank">用户服务</a></li>
         <li><a href="" target="_blank">企业文化</a></li>
@@ -72,7 +72,7 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig" style="margin-left:11%;">
-            <p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">通知公告</a> 》 <a href="" target="_blank">招标公告</a></p>
+            <p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">业务介绍</a> 》 <a href="" target="_blank">业务介绍</a></p>
             <p class="title_me">业务介绍</p>
             <div class="bussiness">
                 <!--广播-->

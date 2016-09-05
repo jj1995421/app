@@ -24,15 +24,9 @@
 <!--导航部分-->
 <div class="nav">
 	<ul>
-    	<li><a href="{{url('index')}}" target="_blank">首页</a></li>
-        <li><a href="" target="_blank">新闻动态</a></li>
-        <li><a href="" target="_blank">公司概况</a></li>
-        <li><a href="" target="_blank">业务介绍</a></li>
-        <li><a href="" target="">通知公告</a></li>
-        <li><a href="" target="_blank">用户服务</a></li>
-        <li><a href="" target="_blank">企业文化</a></li>
-        <li><a href="" target="_blank">党群窗口</a></li>
-        <li><a href="" target="_blank">政策法规</a></li>
+        @foreach($allCates as $k=>$v)
+    	<li><a href="/list?cate={{$v['id']}}" target="_blank">{{$v['name']}}</a></li>
+        @endforeach
     </ul>
 </div>
 <!--导航部分 end-->
@@ -42,14 +36,10 @@
     <!--左侧-->
     	<div class="wrapper_boxleft">
         	<ul class="news_menu">
-            	<li><a href="" target="_blank">新闻动态</a></li>
-        		<li><a href="" target="_blank">公司概况</a></li>
-        		<li><a href="" target="_blank">业务介绍</a></li>
-        		<li><a href="" target="_self">通知公告</a></li>
-        		<li><a href="" target="_blank">用户服务</a></li>
-        		<li><a href="" target="_blank">企业文化</a></li>
-        		<li><a href="" target="_blank">党群窗口</a></li>
-       		    <li><a href="" target="_blank">政策法规</a></li>
+            <!-- 遍历分类 -->
+            @foreach($cates as $k=>$v)
+                <li><a href="/list?cate={{$v['id']}}" >{{$v['name']}}</a></li>
+            @endforeach
             </ul>
             <!--新闻动态-->
             <div class="news_box">
