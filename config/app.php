@@ -197,6 +197,6 @@ return [
     ],
 
     'upload_dir' =>'./u/'.date('Ymd').'/',
-    'webname' => '海昏侯官网'
+    'webname' => '南昌广电网络'
 
 ];

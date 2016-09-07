@@ -24,9 +24,15 @@
 <!--导航部分-->
 <div class="nav">
 	<ul>
-        @foreach($allCates as $k=>$v)
-    	<li><a href="/list?cate={{$v['id']}}" target="_blank">{{$v['name']}}</a></li>
-        @endforeach
+        <li><a href="{{url('/index')}}" >首页</a></li>
+        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
+        <li><a href="" target="_blank">公司概况</a></li>
+        <li><a href="{{url('/business')}}" >业务介绍</a></li>
+        <li><a href="" target="_blank">通知公告</a></li>
+        <li><a href="" target="_blank">用户服务</a></li>
+        <li><a href="" target="_blank">企业文化</a></li>
+        <li><a href="" target="_blank">党群窗口</a></li>
+        <li><a href="" target="_blank">政策法规</a></li>
     </ul>
 </div>
 <!--导航部分 end-->
@@ -37,9 +43,14 @@
     	<div class="wrapper_boxleft">
         	<ul class="news_menu">
             <!-- 遍历分类 -->
-            @foreach($cates as $k=>$v)
-                <li><a href="/list?cate={{$v['id']}}" >{{$v['name']}}</a></li>
-            @endforeach
+        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
+        <li><a href="" target="_blank">公司概况</a></li>
+        <li><a href="{{url('/business')}}" target="_blank">业务介绍</a></li>
+        <li><a href="" target="_blank">通知公告</a></li>
+        <li><a href="" target="_blank">用户服务</a></li>
+        <li><a href="" target="_blank">企业文化</a></li>
+        <li><a href="" target="_blank">党群窗口</a></li>
+        <li><a href="" target="_blank">政策法规</a></li>
             </ul>
             <!--新闻动态-->
             <div class="news_box">
@@ -64,7 +75,7 @@
         	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">通知公告</a> 》 <a href="" target="_blank">招标公告</a></p>
         	<div class="p_content">
             	<p class="title">{{$arcs['title']}}</p>
-                <div class="xin_ti"><span>点击数:</span><span>时间：{{$arcs['created_at']}}</span><span>来源:</span></div>
+                <div class="xin_ti"><span>点击数:</span><span>时间：{{$arcs['created_at']}}</span><span>来源:南昌广电</span></div>
                 <div class="content_detail">
                 	{!!$arcs['content']!!}
                     <img src="{{$arcs['pic']}}" />

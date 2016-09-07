@@ -81,18 +81,11 @@
                 新闻动态
                 </div>
                 <ul>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125% 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
-                    <a href="" target="_blank"><li>年内中国有望成全球第二大保险市场</li></a>
-                    <a href="" target="_blank"><li>信托收益率七年来首次跌入“6时代”</li></a>
-                    <a href="" target="_blank"><li>羽毛球男双-傅海峰/张楠挽救2赛点 2-1逆转夺金牌</li></a>
-                    <a href="" target="_blank"><li>澳大利亚两游泳选手彻夜不归 被禁止参加闭幕式</li></a>
-                    <a href="" target="_blank"><li>中国女排3:1淘汰荷兰 时隔12年再进决赛</li></a>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125%</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
-                    <a href="" target="_blank"><li>年内中国有望成全球第二大保险市场</li></a>
-                    <a href="" target="_blank"><li>信托收益率七年来首次跌入“6时代”</li></a>
-                    <a href="" target="_blank"><li>羽毛球男双-傅海峰/张楠挽救2赛点 2-1逆转夺金牌</li></a>
+                @if(isset($sqq))
+                @foreach($sqq as $k=>$v)
+                    <a href="" target="_blank"><li>{{$v['title']}}</li></a>
+                @endforeach
+                @endif
                 </ul>
             </div>
             <!--新闻动态 end-->

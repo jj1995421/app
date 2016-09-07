@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +24,7 @@
 <!--导航部分-->
 <div class="nav">
 	<ul>
-    	<li><a href="" target="_blank">首页</a></li>
+    	<li><a href="{{url('index')}}">首页</a></li>
         <li><a href="" target="_blank">新闻动态</a></li>
         <li><a href="" target="_blank">公司概况</a></li>
         <li><a href="" target="_blank">业务介绍</a></li>
@@ -72,75 +71,23 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">通知公告</a> 》 <a href="" target="_blank">招标公告</a></p>
+        	<p class="tit"><a href="{{url('index')}}" target="_blank">首页</a> 》 <a href="" target="_blank">新闻动态</a> 》 新闻列表</a></p>
             <p class="title_me">新闻动态</p>
         	<ul class="news_list">
+            @foreach($arcs as $k=>$v)
                 <li>
                 	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
+                    <div class="senten"><a href="{{url('p_detail-'.$v['id'])}}" target="_blank">{{$v['title']}}</a></div>
+                    <div class="time">{{$v['created_at']}}</div>
                 </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li><li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
-                <li>
-                	<img src="/home/images/arrow.png" />
-                    <div class="senten"><a href="" target="_blank">有线集团“家+”系列机顶盒及配套遥控器项目标包1-高清交互机顶盒中标候选人公示</a></div>
-                    <div class="time">2015-06-15</div>
-                </li>
+                @endforeach
             </ul>
             <!--分页-->
            <div id="content-wrapper">
             <div class="inner clearfix">
                 <section id="main-content">
                     <div class="text-center">
-                        <ul id="visible-pages-example"></ul>
+                     {!!$arcs->render()!!}
                     </div>
                 </section>
             </div>
