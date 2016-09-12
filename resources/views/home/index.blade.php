@@ -81,11 +81,12 @@
                 新闻动态
                 </div>
                 <ul>
-                @if(isset($sqq))
+
                 @foreach($sqq as $k=>$v)
-                    <a href="" target="_blank"><li>{{$v['title']}}</li></a>
+                <!-- @if($v['cate_id']==1) -->
+                    <a href="{{url('p_detail-'.$v['id'])}}" target="_blank"><li>{{$v['title']}}</li></a>
+                <!-- @endif -->
                 @endforeach
-                @endif
                 </ul>
             </div>
             <!--新闻动态 end-->
@@ -97,15 +98,9 @@
                 党群窗口
                 </div>
                 <ul>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125% 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
-                    <a href="" target="_blank"><li>年内中国有望成全球第二大保险市场</li></a>
-                    <a href="" target="_blank"><li>信托收益率七年来首次跌入“6时代”</li></a>
-                    <a href="" target="_blank"><li>羽毛球男双-傅海峰/张楠挽救2赛点 2-1逆转夺金牌</li></a>
-                    <a href="" target="_blank"><li>澳大利亚两游泳选手彻夜不归 被禁止参加闭幕式</li></a>
-                    <a href="" target="_blank"><li>中国女排3:1淘汰荷兰 时隔12年再进决赛</li></a>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125%</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
+                @foreach($sqq2 as $k=>$v)
+                    <a href="{{url('p_detail-'.$v['id'])}}" target="_blank"><li>{{$v['title']}}</li></a>
+                @endforeach
                 </ul>
             </div>
             <!--党群窗口 end-->
@@ -115,15 +110,9 @@
                 政策法规
                 </div>
                 <ul>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125% 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨 半年营收暴涨</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
-                    <a href="" target="_blank"><li>年内中国有望成全球第二大保险市场</li></a>
-                    <a href="" target="_blank"><li>信托收益率七年来首次跌入“6时代”</li></a>
-                    <a href="" target="_blank"><li>羽毛球男双-傅海峰/张楠挽救2赛点 2-1逆转夺金牌</li></a>
-                    <a href="" target="_blank"><li>澳大利亚两游泳选手彻夜不归 被禁止参加闭幕式</li></a>
-                    <a href="" target="_blank"><li>中国女排3:1淘汰荷兰 时隔12年再进决赛</li></a>
-                    <a href="" target="_blank"><li>乐视网终端和会员收入激增 半年营收暴涨125%</li></a>
-                    <a href="" target="_blank"><li>格力拟130亿元收购银隆 白电巨头纷纷谋求转型</li></a>
+                @foreach($sqq3 as $k=>$v)
+                    <a href="{{url('p_detail-'.$v['id'])}}" target="_blank"><li>{{$v['title']}}</li></a>
+                @endforeach
                 </ul>
             </div>
             <!--政策法规 end-->
@@ -133,13 +122,8 @@
         <div class="annouce">
             <p class="annouce_title">通知公告</p>
             <ul>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
-                <a href="" target="_blank"><li>[招聘]南昌广电宽带网络有限公司</li></a>
+
+
             </ul>
         </div>
         <!--通知公告 end-->

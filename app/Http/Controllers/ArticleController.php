@@ -93,7 +93,7 @@ class ArticleController extends Controller
         //检测图片
         $article = DB::table('articles')->where('id',$id)->first();
         //检测图片是否存在
-        $path = '.'.$article['pic'];
+        $path = $article['pic'];
         if(file_exists($path)){
             unlink($path);
         }
