@@ -12,29 +12,30 @@ class HomeController extends Controller
 	//前台首页的显示
    public function index()
    {
+      //新闻动态
       $arcs = DB::table('articles')
       ->whereIn('cate_id',[1])
       ->orderBy('id','desc')
       ->skip(0)
       ->take(13)
       ->get();
-
+      //通知公告
       $arcs2 = DB::table('articles')
-      ->whereIn('cate_id',[4])
-      ->orderBy('id','desc')
-      ->skip(0)
-      ->take(9)
-      ->get();
-     
-      $arcs3 = DB::table('articles')
       ->whereIn('cate_id',[7])
       ->orderBy('id','desc')
       ->skip(0)
       ->take(9)
       ->get();
-
-      $arcss = DB::table('articles')
+     //党群窗口
+      $arcs3 = DB::table('articles')
       ->whereIn('cate_id',[8])
+      ->orderBy('id','desc')
+      ->skip(0)
+      ->take(9)
+      ->get();
+      //政策法规
+      $arcss = DB::table('articles')
+      ->whereIn('cate_id',[4])
       ->orderBy('id','desc')
       ->skip(0)
       ->take(7)

@@ -122,8 +122,9 @@
         <div class="annouce">
             <p class="annouce_title">通知公告</p>
             <ul>
-
-
+                @foreach($sqqq as $k=>$v)
+                    <a href="{{url('p_detail-'.$v['id'])}}" target="_blank"><li>{{$v['title']}}</li></a>
+                @endforeach
             </ul>
         </div>
         <!--通知公告 end-->
