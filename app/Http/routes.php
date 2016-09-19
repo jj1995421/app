@@ -36,7 +36,7 @@ Route::post('/admin/login','LoginController@dologin');
 //前台首页
 Route::get('/index','HomeController@index');
 
-//验证码显示的路由
+//验证码显示的路由  该项目用不上.
 Route::get('/vcode','CommonController@createVcode');
 
 //前台文章显示
@@ -46,4 +46,4 @@ Route::get('/p_detail-{id}','ArticleController@show');
 Route::get('/business','HomeController@business');
 
 //前台新闻列表页
-Route:get('/news_list','HomeController@news');
+Route::get('/news_list','HomeController@news');

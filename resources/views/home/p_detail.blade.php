@@ -72,7 +72,7 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">通知公告</a> 》 <a href="" target="_blank">招标公告</a></p>
+        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">新闻动态</a> 》 <a href="" target="_blank">招标公告</a></p>
         	<div class="p_content">
             	<p class="title">{{$arcs['title']}}</p>
                 <div class="xin_ti"><span>点击数:</span><span>时间：{{$arcs['created_at']}}</span><span>来源:南昌广电</span></div>

@@ -113,13 +113,11 @@ class ArticleController extends Controller
         ->first();
 
         //获取所有分类信息
-        $allCates = CateController::getCatesByPid(0);
 
         //展现内容
         return view('home.p_detail',[
             'arcs'=>$arcs,
             'cates'=>CateController::getTopCate(),
-            'allCates'=>$allCates
             ]);
     }
 }

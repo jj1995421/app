@@ -40,9 +40,7 @@ class HomeController extends Controller
       ->skip(0)
       ->take(7)
       ->get();
-
-
-
+      //分配变量到view
       return view('home.index',['sqq'=>$arcs,'sqq2'=>$arcs2,'sqq3'=>$arcs3,'sqqq'=>$arcss]);
 
    }
