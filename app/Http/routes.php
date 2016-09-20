@@ -51,5 +51,11 @@ Route::get('/news_list','HomeController@news');
 //前台公司概况列表页
 Route::get('/profile','HomeController@profile');
 
-//前台业务介绍列表   以下是业务介绍里子窗口
-// Route::get('/board_fu','HomeController@bod');
+//通知公告页
+Route::get('/tz_list','HomeController@tz_list');
+
+//党群窗口页
+Route::get('/dq_list','HomeController@dq_list');
+
+//政策法规页
+Route::get('/zc_list','HomeController@zc_list');

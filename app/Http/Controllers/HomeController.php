@@ -60,7 +60,6 @@ class HomeController extends Controller
       ->orderBy('id','desc')
       ->paginate(10);
    	return view('home.news_list',[
-         'allcates'=>CateController::getCatesByPid(0),
          'arcs'=>$arcs
          ]);
    }
@@ -69,5 +68,35 @@ class HomeController extends Controller
    public function profile()
    {
       return view('home.profile');
+   }
+
+   //前台通知公告页
+   public function tz_list()
+   {
+      $arcs = DB::table('articles')
+      ->where('cate_id',4)
+      ->orderBy('id','desc')
+      ->paginate(10);
+      return view('home.tz_list',['arcs'=>$arcs]);
+   }
+
+   //党群窗口页
+   public function dq_list()
+   {
+      $arcs = DB::table('articles')
+      ->where('cate_id',7)
+      ->orderBy('id','desc')
+      ->paginate(10);
+      return view('home.dq_list',['arcs'=>$arcs]);
+   }
+
+   //政策法规页
+   public function zc_list()
+   {
+      $arcs = DB::table('articles')
+      ->where('cate_id',8)
+      ->orderBy('id','desc')
+      ->paginate(10);
+      return view('home.zc_list',['arcs'=>$arcs]);
    }
 }

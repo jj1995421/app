@@ -7,12 +7,12 @@
 <link href="/home/css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/home/css/index.css" />
 <link rel="stylesheet" type="text/css" href="/home/css/main.css" />
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="/home/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/home/js/jquery.SuperSlide.js"></script>
 <!--分页-->
-<script src="js/bootstrap.js" type="text/javascript"></script>
-<script src="js/jquery.twbsPagination.js" type="text/javascript"></script>
-<script src="js/zzsc.js" type="text/javascript"></script>
+<script src="/home/js/bootstrap.js" type="text/javascript"></script>
+<script src="/home/js/jquery.twbsPagination.js" type="text/javascript"></script>
+<script src="/home/js/zzsc.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -31,8 +31,8 @@
         <li><a href="{{url('/tz_list')}}" >通知公告</a></li>
         <li><a href="" target="_blank">用户服务</a></li>
         <li><a href="" target="_blank">企业文化</a></li>
-        <li><a href="" target="_blank">党群窗口</a></li>
-        <li><a href="{{url('/dq_list')}}">政策法规</a></li>
+        <li><a href="{{url('/dq_list')}}">党群窗口</a></li>
+        <li><a href="{{url('/zc_list')}}">政策法规</a></li>
     </ul>
 </div>
 <!--导航部分 end-->

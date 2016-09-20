@@ -42,14 +42,14 @@
     <!--左侧-->
     	<div class="wrapper_boxleft">
         	<ul class="news_menu">
-        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
-        <li><a href="{{url('/profile')}}" >公司概况</a></li>
-        <li><a href="{{url('/business')}}" target="_blank">业务介绍</a></li>
-        <li><a href="{{url('/tz_list')}}" >通知公告</a></li>
-        <li><a href="" target="_blank">用户服务</a></li>
-        <li><a href="" target="_blank">企业文化</a></li>
-        <li><a href="{{url('/dq_list')}}">党群窗口</a></li>
-        <li><a href="{{url('/zc_list')}}">政策法规</a></li>
+            	<li><a href="" target="_blank">新闻动态</a></li>
+        		<li><a href="" target="_blank">公司概况</a></li>
+        		<li><a href="" target="_blank">业务介绍</a></li>
+        		<li><a href="" target="_blank">通知公告</a></li>
+        		<li><a href="" target="_blank">用户服务</a></li>
+        		<li><a href="" target="_blank">企业文化</a></li>
+        		<li><a href="" target="_blank">党群窗口</a></li>
+       		    <li><a href="" target="_blank">政策法规</a></li>
             </ul>
             <!--新闻动态-->
             <div class="news_box">
@@ -71,8 +71,8 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig">
-        	<p class="tit"><a href="{{url('index')}}" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['cname']}}新闻动态</a> 》 动态列表</a></p>
-            <p class="title_me">新闻动态</p>
+        	<p class="tit"><a href="{{url('index')}}" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['cname']}}通知公告</a> 》 公告列表</a></p>
+            <p class="title_me">通知公告</p>
         	<ul class="news_list">
             @foreach($arcs as $k=>$v)
                 <li>

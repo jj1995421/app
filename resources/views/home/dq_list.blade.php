@@ -71,7 +71,7 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig">
-        	<p class="tit"><a href="{{url('index')}}" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['cname']}}新闻动态</a> 》 动态列表</a></p>
+        	<p class="tit"><a href="{{url('index')}}" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['cname']}}党群窗口</a> 》 文章列表</a></p>
             <p class="title_me">新闻动态</p>
         	<ul class="news_list">
             @foreach($arcs as $k=>$v)
