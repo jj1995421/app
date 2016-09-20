@@ -3,7 +3,7 @@
 .buesiness_bar img{width:100%;}
 .wrapper_box{width:976px;min-heighT:400px;margin:0 auto;border:1px solid #ccc;background:#fff;padding-top:18px;padding-left:20px;overflow:auto;padding-bottom:10px;}
 .wrap_boxs{border:none;}
-.wrapper_boxleft{width:210px;float:left;height:940px;}
+.wrapper_boxleft{width:210px;float:left;height:993px;}
 .wrapper_boxleft .news_menu{width:100%;height:300px;}
 .wrapper_boxleft .news_menu li{width:87%;height:35px;line-height:35px;color:#fff;padding-left:13%;background:#266B94;border-bottom:2px solid #fff;cursor:pointer;  font-size: 15px;}
 .wrapper_boxleft .news_menu li a{color:#fff;}
@@ -14,7 +14,7 @@
 .news_box ul li a{color:gray;}
 .news_box ul li a:hover{color:red;}
 .wrapper_boxleft .news_r_box{width:99%;border:1px solid #ccc;border-top:none;}
-.wrapper_boxrig{float:left;widtH:730px;min-height:395px;margin-lefT:22px;}
+.wrapper_boxrig{float:left;widtH:730px;min-height:395px;margin-lefT:19px;}
 .wrapper_boxrig .tit{width:97 %;height:28px;line-height:28px;background:#F0EFF4;  font-size: 12px;padding-left:3%;}
 .wrapper_boxrig .news_list{margin-left: 10px;}
 .wrapper_boxrig .title_me{height:33px;line-height:33px;border-left:5px solid #006FC1;padding-left:10px;font-size:20px;  margin-left: 10px;margin-top: 15px;}
@@ -74,11 +74,6 @@
  padding-left: 10px;
   color:#fff;
 }
-
-
-#nav a.selected{
- background: url(http://bbs.blueidea.com/images/common/bb_expand.gif) no-repeat right 50%;
-}
 #nav li {
  line-height: 35px;
  position: relative;
@@ -126,6 +121,37 @@
 * html #nav li a {
  height: 1%; 
 }
+/*导航*/
+#menu { width:210px; margin:auto;text-align:center;}
+ #menu h1 { font-size:14px; margin-top:1px; background: #266B94;border-bottom:1px solid #ccc;}
+ #menu h2 { font-size:14px; background:rgb(89,143,185);border-bottom:1px solid #ccc;}
+/* #menu h2:hover {background:rgba(89, 143, 185, 0.66);}*/
+ #menu ul {  /*height:100px;*/ border-top:none;overflow:auto; background: #266B94;}
+ #menu a { display:block; text-decoration:none; overflow:hidden;height:35px;line-height:35px;color:#fff;border-bottom:1px solid #ccc;}
+ #menu a:hover{ color:#fff; background:;}
+ #menu .no {display:none;}
+ #menu .h1 a{color:#fff;}
+ #menu .h2 a{color:#fff;}
+ #menu  h1 a{color:#FFF;}
+/*导航*/
 .business_cont{width:96%;margin:0 auto;line-height:25px;margin-top:15px;}
 .business_cont .title{text-align:center;font-size: 16px;}
 .business_cont p{text-indent:2em;}
+/*公司介绍*/
+.profile_cont{width:1000px;margin:0 auto;border:1px solid #ccc;border-top:none;}
+.profile_mess{width:90%;margin:0 auto;  font-size: 16px;line-height: 30px;color:#6B6C6C;margin-top:25px;}
+.profile_mess p{} 
+.honor{width:83%;height:300px;margin:0 auto;margin-top:80px;margin-bottom:70px;}
+.honor_box{width:260px;height:260px;border:1px solid #ccc;float:left;padding:5px;}
+.honor_box img{width:100%;max-height:100%;display:none;}
+.honor_box img:first-child{display:block;}
+.honor_cont{float:left;margin-left: 50px;}
+.honor_cont ul{margin-top:30px;}
+.honor_cont ul li{height:25px;line-height:25px;margin:14px 0 14px 0;font-size:14px;padding:2px 5px 2px 5px;cursor:pointer;}
+.honor_cont .active{background:#89D1EB;color:#fff;}
+.events{height:1200px;}
+.year{width:205px;height:1096px;float:left}
+.year img{width:100%;}
+.year_cont{width:450px;float:left;font-size:13px;margin-left:50px;  line-height: 25px;}
+.year_cont p{text-indent:2em;}
+/*公司介绍end*/

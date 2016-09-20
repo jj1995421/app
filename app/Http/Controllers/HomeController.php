@@ -64,4 +64,10 @@ class HomeController extends Controller
          'arcs'=>$arcs
          ]);
    }
+
+   //前台公司概况
+   public function profile()
+   {
+      return view('home.profile');
+   }
 }

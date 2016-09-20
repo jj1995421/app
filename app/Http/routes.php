@@ -47,3 +47,9 @@ Route::get('/business','HomeController@business');
 
 //前台新闻列表页
 Route::get('/news_list','HomeController@news');
+
+//前台公司概况列表页
+Route::get('/profile','HomeController@profile');
+
+//前台业务介绍列表   以下是业务介绍里子窗口
+// Route::get('/board_fu','HomeController@bod');
