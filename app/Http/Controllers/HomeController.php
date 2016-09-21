@@ -99,4 +99,16 @@ class HomeController extends Controller
       ->paginate(10);
       return view('home.zc_list',['arcs'=>$arcs]);
    }
+
+   //企业文化
+   public function culture()
+   {
+      return view('home.culture');
+   }
+
+   //用户服务
+   public function service()
+   {
+      return view('home.service');
+   }
 }

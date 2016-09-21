@@ -24,15 +24,15 @@
 <!--导航部分-->
 <div class="nav">
 	<ul>
-    	<li><a href="{{url('/index')}}" >首页</a></li>
-        <li><a href="" target="_blank">新闻动态</a></li>
-        <li><a href="" target="_blank">公司概况</a></li>
-        <li><a href="" >业务介绍</a></li>
-        <li><a href="" target="_blank">通知公告</a></li>
+        <li><a href="{{url('/index')}}" >首页</a></li>
+        <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
+        <li><a href="{{url('/profile')}}" >公司概况</a></li>
+        <li><a href="{{url('/business')}}">业务介绍</a></li>
+        <li><a href="{{url('/tz_list')}}" >通知公告</a></li>
         <li><a href="" target="_blank">用户服务</a></li>
-        <li><a href="" target="_blank">企业文化</a></li>
-        <li><a href="" target="_blank">党群窗口</a></li>
-        <li><a href="" target="_blank">政策法规</a></li>
+        <li><a href="{{url('/culture')}}" >企业文化</a></li>
+        <li><a href="{{url('/dq_list')}}">党群窗口</a></li>
+        <li><a href="{{url('/zc_list')}}" >政策法规</a></li>
     </ul>
 </div>
 <!--导航部分 end-->
@@ -127,7 +127,7 @@
                         <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
                     </div>
                     <div class="channel_box" style="电视回看:#C9C9C9">
-                    	<p class="channel_tit">标清专业付费频道</p>
+                    	<p class="channel_tit">电视回看</p>
 <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
                 </div>
             </div>

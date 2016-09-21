@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','HomeController@index');
 Route::group(['middleware'=>'login'],function(){
 	//后台首页的路由规则
 	Route::get('/admin','AdminController@index');
@@ -59,3 +57,9 @@ Route::get('/dq_list','HomeController@dq_list');
 
 //政策法规页
 Route::get('/zc_list','HomeController@zc_list');
+
+//公司文化页
+Route::get('/culture','HomeController@culture');
+
+//用户服务页
+Route::get('/service','HomeController@service');

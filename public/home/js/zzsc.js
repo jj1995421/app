@@ -39,6 +39,7 @@ $honor_cont.click(function(){
 	$honor_box.css("display","none");
 	$honor_box.eq($this).css("display","block");
 	})
+
 });
 function ShowMenu(obj,n){
  var Nav = obj.parentNode;
@@ -66,4 +67,24 @@ function ShowMenu(obj,n){
   obj.innerHTML = obj.innerHTML.replace("-","+");
  }
 }
-
+$(document).ready(function () {
+	/*企业文化切换*/
+	var cul_len=$('.cluture_box ul li').length;
+	var cul_left=$('.cluture_box ul').css('marginLeft'); 
+	cul_left=parseInt(cul_left);
+	$('.cluture_box ul').width(cul_len*460);
+	$('.cul_left').click(function(){
+		if(cul_left!=(cul_len-1)*460*(-1)){
+		cul_left=cul_left-460;
+		$('.cluture_box ul').css("marginLeft",cul_left); }
+		/*for(var i=cul_left;i>cul_left-460;i-46){
+			$('.cluture_box ul').css('marginLeft',i); 
+		}*/
+	});
+	$('.cul_ri').click(function(){
+		if(cul_left!=0){
+		cul_left=cul_left+460;
+		$('.cluture_box ul ').css("marginLeft",cul_left);
+		}
+		})
+	})
