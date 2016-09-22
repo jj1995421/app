@@ -111,4 +111,10 @@ class HomeController extends Controller
    {
       return view('home.service');
    }
+
+   //前台进入标清业务介绍页
+   public function bboard()
+   {
+      return view('yewu.board_fu');
+   }
 }

@@ -12,7 +12,7 @@ class CateController extends Controller
     //缓存所有分类信息
     public static function catchCates()
     {
-        Cache::set('cates',sle);
+        // Cache::set('cates',self::);
     }
 
 

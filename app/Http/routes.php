@@ -25,6 +25,9 @@ Route::group(['middleware'=>'login'],function(){
 
 	//后台文章管理
 	Route::controller('/admin/article','ArticleController');
+
+	//后台业务分类管理
+	Route::controller('/admin/ycate','YcateController');
 });
 //后台登录页面
 Route::get('/admin/login','LoginController@login');
@@ -63,3 +66,6 @@ Route::get('/culture','HomeController@culture');
 
 //用户服务页
 Route::get('/service','HomeController@service');
+
+//标清业务介绍页
+Route::get('/board_fu','HomeController@bboard');

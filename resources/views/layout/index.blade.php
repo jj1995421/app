@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="/ad/css/themer.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/ad/css/my.css" media="screen">
 
-<title>MWS Admin -后台首页</title>
+<title>南昌广电网络 -后台管理</title>
 
 </head>
 
@@ -250,6 +250,13 @@
                         <ul class="closed">
                             <li><a href="{{url('/admin/article/add')}}">文章添加</a></li>
                             <li><a href="{{url('/admin/article/index')}}">文章列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-list"></i> 业务介绍</a>
+                        <ul class="closed">
+                            <li><a href="{{url('/admin/ycate/add')}}">分类添加</a></li>
+                            <li><a href="{{url('/admin/ycate/index')}}">分类列表</a></li>
                         </ul>
                     </li>
                 </ul>
