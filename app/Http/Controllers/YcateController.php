@@ -15,17 +15,36 @@ class YcateController extends Controller
         return view('ycate.index');
     }
 
+    //获取分类下所有的分类  按照sql顺序来获取
+    public static function getYcate()
+    {
+        $res = DB::table('ycate')
+            ->select(DB::raw('id,path,pid,name,concat(path,",",id) as paths'))
+            ->orderBy('paths')
+            ->get();
+
+        //调整分类名称
+            foreach($res as $key => $value){
+                //拆分数组
+                $tmp = explode(',', $value['path']);
+                $len = count($tmp) - 1;
+                $res[$key]['name'] = str_repeat('|----', $len).$value['name'];
+            }
+        return  $res;
+    }
+
     //分类的添加页面显示
     public function getAdd()
     {
-        $cates = DB::table('ycate')->get();
+        $cates =  self::getYcate();
+        // $cates = DB::table('ycate')->get();
         return view('ycate.add',['cates'=>$cates]);
     }
 
     //分类的插入操作
     public function postInsert(Request $request)
-    {
-        $data = array();
+    {   
+        $data = array();    
         //获取父级分类id
         $pid = $request->input('pid');
 
