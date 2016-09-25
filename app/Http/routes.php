@@ -21,4 +21,14 @@ Route::get('/admin','AdminController@index');
 //后台用户的的路由规则
 // Route::get('admin/user/edit/{id}','UserController@edit');
 Route::controller('/admin/user','UserController');
- 
+
+
+//后台分类管理
+Route::controller('/admin/cate','CateController');
+
+//后台文章管理
+Route::controller('/admin/article','ArticleController');
+
+//后台登录页面
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');

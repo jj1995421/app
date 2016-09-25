@@ -98,6 +98,18 @@ class UserController extends Controller
             return back()->with('error','更新失败');
         }
     }
+
+
+    //用户删除
+    function getDelete($id){
+        $res = DB::table('users')->where('ID','=',$id)->delete();
+        if($res)
+        {
+            return  redirect('/admin/user/index')->with('success','删除成功');
+        }else{
+            return back()->with('error','删除失败');
+        }
+    }
 }
 
 

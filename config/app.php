@@ -39,7 +39,10 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+
+
+    'timezone' => 'PRC',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -195,5 +198,9 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
     ],
+
+
+    'upload_dir' =>'./u/'.date('Ymd').'/',
+    'webname' => '海昏侯官网'
 
 ];

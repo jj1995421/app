@@ -35,7 +35,7 @@
           <tr role="row">
             <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 212px;">ID</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 278px;">用户名</th>
-            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 260px;">邮箱(s)</th>
+            <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 260px;">邮箱</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 187px;">状态</th>
             <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 142px;">操作</th></tr>
         </thead>
@@ -47,12 +47,12 @@
 					odd
 					@endif
           ">
-            <td class=" sorting_1">{{$v->ID}}</td>
-            <td class=" ">{{$v->username}}</td>
-            <td class=" ">{{$v->email}}</td>
-            <td class=" ">{{showState($v->status)}}</td>
-            <td class=" ">&nbsp;&nbsp;&nbsp;<a href="/admin/user/edit/{{$v->ID}}"  style="color:black;font-size:16px;"><i class="icon-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href="/admin/user/delete/{{$v->ID}}" style="color:black;font-size:16px;"><i class="icon-remove"></i></a></td>
+            <td class=" sorting_1">{{$v['ID']}}</td>
+            <td class=" ">{{$v['username']}}</td>
+            <td class=" ">{{$v['email']}}</td>
+            <td class=" ">{{showState($v['status'])}}</td>
+            <td class=" ">&nbsp;&nbsp;&nbsp;<a href="/admin/user/edit/{{$v['ID']}}"  style="color:black;font-size:16px;"><i class="icon-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="/admin/user/delete/{{$v['ID']}}" style="color:black;font-size:16px;"><i class="icon-remove"></i></a></td>
           </tr>
           @endforeach
         </tbody>
