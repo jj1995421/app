@@ -10,11 +10,11 @@ use App\Http\Controllers\Controller;
 
 class CateController extends Controller
 {
-    
+
     //分类列表显示
     public function getIndex()
     {
-            // dd(self::getCatesByPid(0));
+            self::getCatesByPid(0);
             //读取分类
             $cates = self::getCates();
             return view('cate.index',['cates'=>$cates]);
@@ -171,5 +171,11 @@ class CateController extends Controller
         }else{
             return back()->with('error','删除失败');
         }
+    }
+
+    //获取顶级分类
+    public static function getTopCate()
+    {
+        return DB::table('cates')->where('pid',0)->get();
     }
 }

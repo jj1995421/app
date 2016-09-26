@@ -22,7 +22,7 @@ class ArticleController extends Controller
     {
         //处理数据
         $data = $this->dealRequest($request);
-       $data['created_at'] = date('Y-m-d H:i:s');
+       $data['created_at'] = date('Y-m-d');
        //插入数据库
        if(DB::table('articles')->insert($data)){
         return redirect('/admin/article/index')->with('success','添加成功');
@@ -93,7 +93,7 @@ class ArticleController extends Controller
         //检测图片
         $article = DB::table('articles')->where('id',$id)->first();
         //检测图片是否存在
-        $path = '.'.$article['pic'];
+        $path = $article['pic'];
         if(file_exists($path)){
             unlink($path);
         }
@@ -102,5 +102,22 @@ class ArticleController extends Controller
     }else{
         return back()->with('error','删除失败');
     }
+    }
+
+    //前台文章显示
+    public function show($id)
+    {
+        //读取指定id的文章信息
+        $arcs = DB::table('articles')
+        ->where('id','=',$id)
+        ->first();
+
+        //获取所有分类信息
+
+        //展现内容
+        return view('home.p_detail',[
+            'arcs'=>$arcs,
+            'cates'=>CateController::getTopCate(),
+            ]);
     }
 }
