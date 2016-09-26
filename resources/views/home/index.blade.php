@@ -151,7 +151,7 @@
                 <img src="/home/images/ad_service1.jpg" />
                 <div class="ad_service_cont">
                     <p><span class="title" style="color:#5FD5D2">标清付费频道</span><span class="e_title">Standard pay channel</span></p>
-                    <p><a href="" target="_blank"><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
+                    <p><a href="{{url('/board_fu')}}" ><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
                 </div>
             </li>
             <li>

@@ -71,13 +71,11 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig" style="margin-left:1%;">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">标清付费频道</a> 》 <a href="" target="_blank">业务介绍</a></p>
+        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['pid']}}</a> 》 <a href="" target="_blank">{{$arcs['yname']}}</a></p>
         	<div class="business_cont">
-            <p class="title">标清付费频道（业务介绍）</p>
+            <p class="title">{{$arcs['title']}}</p>
             <img src="/home/images/line.jpg" width="100%"/>
-            	<p>标清电视频道是 “标准清晰度”电视频道。图像显示分辨率为720p格式。图像分辨率越高，电视图像越清晰。高清电视的图像分辨率为1080i或1080p，超高清电视的图像分辨率为1080p的两倍以上。按图像分辨率，电视机分为标清电视机、高清或超高清电视机、3D高清电视机。</p>
-                <p>标清专业频道是在标清基本频道的基础上推出的专业付费频道，丰富多元的品类，以满足您丰富多元的品味！</p>
-                <p>南昌广电网络标清专业频道目前分为十大类：影视类、音乐类、娱乐类、体育类、休闲类、少儿类、游戏类、教育类、美容养生类、金融证券类，供您全家随心挑选。喜欢什么，想看什么，您就订什么，一切由您说了算！</p>
+            	{!!$arcs['content']!!}
             </div>
             
             

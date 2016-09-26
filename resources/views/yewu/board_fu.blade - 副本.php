@@ -67,6 +67,42 @@
                      </li>
                      </ul>
                 </li>
+                <li><a class="selected" >宽带业务</a>
+                    <ul>
+                         <li><a class="selected" href="#">家庭宽带</a>
+                             <ul>
+                                 <li><a href="kuan_home.html">业务介绍</a></li>
+                                 <!--<li><a href="#">使用指南</a></li>
+                                 <li><a href="#">业务办理</a></li>-->
+                             </ul>
+                    	</li>
+                        <li><a class="selected" href="#">集团专线业务</a>
+                             <ul>
+                                 <li><a href="kuan_group.html">业务介绍</a></li>
+                                 <!--<li><a href="#">使用指南</a></li>
+                                 <li><a href="#">业务办理</a></li>-->
+                             </ul>
+                    	</li>
+                     </ul>
+                </li>
+                <li><a class="selected" >点播类业务</a>
+                    <ul>
+                         <li><a class="selected" >影视点播</a>
+                             <ul>
+                                 <li><a href="dian_bo.html">业务介绍</a></li>
+                                 <li><a href="dian_bo_use.html">使用指南</a></li>
+                                 <!--<li><a href="#">业务办理</a></li>-->
+                             </ul>
+                    	</li>
+                        <li><a class="selected" >电视回看</a>
+                             <ul>
+                                 <li><a href="dian_back.html">业务介绍</a></li>
+                                 <li><a href="dian_back_use.html">使用指南</a></li>
+                                 <!--<li><a href="#">业务办理</a></li>-->
+                             </ul>
+                    	</li>
+                     </ul>
+                </li>
             </ul>
         </div>
         <!--右侧列表-->

@@ -28,6 +28,9 @@ Route::group(['middleware'=>'login'],function(){
 
 	//后台业务分类管理
 	Route::controller('/admin/ycate','YcateController');
+
+	//后台业务文章管理
+	Route::controller('/admin/ye','YeController');
 });
 //后台登录页面
 Route::get('/admin/login','LoginController@login');
@@ -36,6 +39,9 @@ Route::post('/admin/login','LoginController@dologin');
 
 //前台首页
 Route::get('/index','HomeController@index');
+
+//业务介绍页
+Route::get('/ye-{id}','YeController@show');
 
 //验证码显示的路由  该项目用不上.
 Route::get('/vcode','CommonController@createVcode');

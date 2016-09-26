@@ -253,10 +253,17 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="icon-list"></i> 业务介绍</a>
+                        <a href="#"><i class="icon-list"></i> 业务介绍分类</a>
                         <ul class="closed">
                             <li><a href="{{url('/admin/ycate/add')}}">分类添加</a></li>
                             <li><a href="{{url('/admin/ycate/index')}}">分类列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-list"></i> 业务介绍文章</a>
+                        <ul class="closed">
+                            <li><a href="{{url('/admin/ye/add')}}">文章添加</a></li>
+                            <li><a href="{{url('/admin/ye/index')}}">文章列表</a></li>
                         </ul>
                     </li>
                 </ul>
