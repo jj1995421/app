@@ -71,7 +71,7 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig" style="margin-left:1%;">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">{{$arcs['pid']}}</a> 》 <a href="" target="_blank">{{$arcs['yname']}}</a></p>
+        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">{{getNameByPid($arcs['pid'])}}</a> 》 <a href="" target="_blank">{{$arcs['yname']}}</a></p>
         	<div class="business_cont">
             <p class="title">{{$arcs['title']}}</p>
             <img src="/home/images/line.jpg" width="100%"/>

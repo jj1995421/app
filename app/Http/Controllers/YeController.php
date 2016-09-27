@@ -84,9 +84,7 @@ class YeController extends Controller
         $arcs = DB::table('ye')
         ->where('ye.id','=',$id)
         ->select('ye.*','ycate.name as yname','ycate.pid')
-
         ->join('ycate','ycate.id','=','ye.ycate_id')
-
         ->first();
         return view('yewu.show',['arcs'=>$arcs]);
     }

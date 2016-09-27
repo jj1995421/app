@@ -41,9 +41,9 @@
             <div class="focusBox" >
                 <ul class="pic" style="position: relative; width: 320px; height: 240px;">
                 <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/2.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: list-item;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/3.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/4.jpg"></a></li>
+                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
+                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: list-item;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
+                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
                 </ul>
                 <div class="txt-bg"></div>
                 <div class="txt">
@@ -71,11 +71,13 @@
         <!--第一层右侧新闻部分-->
         <div class="news_ad_r">
             <!--头条新闻-->
-            <a href="" target="_blank">
+            @foreach($arcsq as $k=>$v)
+            <a href="{{url('p_detail-'.$v['id'])}}">
             <div class="topnews">
-                <p class="topnews_title">女子20公里竞走刘虹终点前反超夺金 墨西哥银牌</p>
-                <div class="topnews_cont">北京时间8月20日，2016年里约奥运会的田径比赛，继续在第14个比赛日进行。女子20公里竞走决赛，参赛的3名中国选手发挥出色，刘虹以1小时28分35秒的成绩获得冠军，吕秀芝以1小时28分42秒获得季军，切阳什姐以1小时29分04秒排名第五</div>
+                <p class="topnews_title">{{$v['title']}}</p>
+                <div class="topnews_cont">{{$v['descript']}}</div>
             </div>
+            @endforeach
             </a>
             <!--新闻动态-->
             <div class="dailynews">

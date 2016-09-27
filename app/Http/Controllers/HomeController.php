@@ -19,6 +19,13 @@ class HomeController extends Controller
       ->skip(0)
       ->take(13)
       ->get();
+
+      $arcsq = DB::table('articles')
+      ->whereIn('cate_id',[1])
+      ->orderBy('id','desc')
+      ->skip(0)
+      ->take(1)
+      ->get();
       //通知公告
       $arcs2 = DB::table('articles')
       ->whereIn('cate_id',[7])
@@ -41,7 +48,7 @@ class HomeController extends Controller
       ->take(7)
       ->get();
       //分配变量到view
-      return view('home.index',['sqq'=>$arcs,'sqq2'=>$arcs2,'sqq3'=>$arcs3,'sqqq'=>$arcss]);
+      return view('home.index',['sqq'=>$arcs,'sqq2'=>$arcs2,'sqq3'=>$arcs3,'sqqq'=>$arcss,'arcsq'=>$arcsq]);
 
    }
 

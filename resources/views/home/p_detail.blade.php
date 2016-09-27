@@ -26,7 +26,7 @@
 	<ul>
         <li><a href="{{url('/index')}}" >首页</a></li>
         <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
-        <li><a href="" target="_blank">公司概况</a></li>
+        <li><a href="profile">公司概况</a></li>
         <li><a href="{{url('/business')}}" >业务介绍</a></li>
         <li><a href="" target="_blank">通知公告</a></li>
         <li><a href="" target="_blank">用户服务</a></li>
@@ -80,10 +80,10 @@
                 	{!!$arcs['content']!!}
                     <img src="{{$arcs['pic']}}" />
                 </div>
-                <div class="other_new">
+<!--                 <div class="other_new">
                 	<p><a href="">上一条：</a></p>
                     <p><a href="">下一条：集团公司人力资源部负责人、对应公司督导责任人全程参与</a></p>
-                </div>
+                </div> -->
             </div>       
            
         </div>

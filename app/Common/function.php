@@ -16,4 +16,9 @@
 		}
 	}
 
+	function getNameByPid($id)
+	{
+		return DB::table('ycate')->where('pid',$id)->first()['name'];
+	}
+
  ?>
