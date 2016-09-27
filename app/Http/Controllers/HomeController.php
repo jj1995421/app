@@ -124,4 +124,6 @@ class HomeController extends Controller
    {
       return view('yewu.board_fu');
    }
+
+   //待续
 }
