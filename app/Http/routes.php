@@ -27,10 +27,10 @@ Route::group(['middleware'=>'login'],function(){
 	Route::controller('/admin/article','ArticleController');
 
 	//后台业务分类管理
-	Route::controller('/admin/ycate','YcateController');
+	// Route::controller('/admin/ycate','YcateController');
 
 	//后台业务文章管理
-	Route::controller('/admin/ye','YeController');
+	// Route::controller('/admin/ye','YeController');
 });
 //后台登录页面
 Route::get('/admin/login','LoginController@login');

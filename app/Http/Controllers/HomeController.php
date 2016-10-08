@@ -42,7 +42,7 @@ class HomeController extends Controller
       ->get();
       //政策法规
       $arcss = DB::table('articles')
-      ->whereIn('cate_id',[4])
+      ->where('cate_id',[4])
       ->orderBy('id','desc')
       ->skip(0)
       ->take(7)
@@ -111,6 +111,7 @@ class HomeController extends Controller
    public function culture()
    {
       return view('home.culture');
+      //test
    }
 
    //用户服务

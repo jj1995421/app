@@ -112,8 +112,6 @@ class ArticleController extends Controller
         ->where('id','=',$id)
         ->first();
 
-        //获取所有分类信息
-
         //展现内容
         return view('home.p_detail',[
             'arcs'=>$arcs,
