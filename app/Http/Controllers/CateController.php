@@ -3,18 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class CateController extends Controller
 {
-    //缓存所有分类信息
-    public static function catchCates()
-    {
-        // Cache::set('cates',self::);
-    }
-
 
     //分类列表显示
     public function getIndex()

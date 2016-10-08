@@ -39,7 +39,10 @@ return [
     |
     */
 
+
+
     'timezone' => 'PRC',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -195,6 +198,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
     ],
+
 
     'upload_dir' =>'./u/'.date('Ymd').'/',
     'webname' => '南昌广电网络'

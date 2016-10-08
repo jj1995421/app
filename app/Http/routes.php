@@ -23,8 +23,11 @@ Route::group(['middleware'=>'login'],function(){
 	//后台分类管理
 	Route::controller('/admin/cate','CateController');
 
+   //后台分类管理
+
 	//后台文章管理
 	Route::controller('/admin/article','ArticleController');
+
 
 	//后台业务分类管理
 	// Route::controller('/admin/ycate','YcateController');

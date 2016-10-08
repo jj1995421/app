@@ -99,6 +99,7 @@ class UserController extends Controller
         }
     }
 
+
     //用户删除
     function getDelete($id){
         $res = DB::table('users')->where('ID','=',$id)->delete();
