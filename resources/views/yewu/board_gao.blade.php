@@ -18,12 +18,12 @@
 <body>
 <!--头部-->
 <div class="top">
-	<img src="/home/images/top.jpg" />
+    <img src="/home/images/top.jpg" />
 </div>
 <!--头部 end-->
 <!--导航部分-->
 <div class="nav">
-	<ul>
+    <ul>
         <li><a href="{{url('/index')}}" >首页</a></li>
         <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
         <li><a href="{{url('/profile')}}" >公司概况</a></li>
@@ -38,10 +38,10 @@
 <!--导航部分 end-->
 <!--主体部分-->
 <div class="news_wrapper">
-	<div class="buesiness_bar"> <img src="/home/images/business_banner.jpg" width="100%"/></div>
-	<div class="wrapper_box wrap_boxs">
+    <div class="buesiness_bar"> <img src="/home/images/business_banner.jpg" width="100%"/></div>
+    <div class="wrapper_box wrap_boxs">
         <div class="menu_left">
-        	<ul id="nav">
+            <ul id="nav">
                 <li><a class="selected" >广播类业务</a>
                      <ul>
                      <li><a class="selected" >高清频道</a>
@@ -75,14 +75,14 @@
                                 <!--  <li><a href="#">使用指南</a></li>
                                  <li><a href="#">业务办理</a></li> -->
                              </ul>
-                    	</li>
+                        </li>
                         <li><a class="selected" href="#">集团专线业务</a>
                              <ul>
                                  <li><a href="{{url('kuan_group')}}">业务介绍</a></li>
 <!--                                  <li><a href="#">使用指南</a></li>
                                  <li><a href="#">业务办理</a></li> -->
                              </ul>
-                    	</li>
+                        </li>
                      </ul>
                 </li>
                 <li><a class="selected" >点播类业务</a>
@@ -93,38 +93,37 @@
                                  <li><a href="{{url('dian_bo_use')}}">使用指南</a></li>
                                  <!-- <li><a href="#">业务办理</a></li> -->
                              </ul>
-                    	</li>
+                        </li>
                         <li><a class="selected" >电视回看</a>
                              <ul>
                                  <li><a href="{{url('dian_back')}}">业务介绍</a></li>
                                  <li><a href="{{url('dian_back_use')}}">使用指南</a></li>
                                  <!-- <li><a href="#">业务办理</a></li> -->
                              </ul>
-                    	</li>
+                        </li>
                      </ul>
                 </li>
             </ul>
         </div>
         <!--右侧列表-->
-        <div class="wrapper_boxrig" style="margin-left:1%;">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">标清付费频道</a> 》 <a href="" target="_blank">业务介绍</a></p>
-        	<div class="business_cont">
-            <p class="title">标清付费频道（业务介绍）</p>
-            <img src="/home/images/line.jpg" width="100%"/>
-            	<p>标清电视频道是 “标准清晰度”电视频道。图像显示分辨率为720p格式。图像分辨率越高，电视图像越清晰。高清电视的图像分辨率为1080i或1080p，超高清电视的图像分辨率为1080p的两倍以上。按图像分辨率，电视机分为标清电视机、高清或超高清电视机、3D高清电视机。</p>
-                <p>标清专业频道是在标清基本频道的基础上推出的专业付费频道，丰富多元的品类，以满足您丰富多元的品味！</p>
-                <p>南昌广电网络标清专业频道目前分为十大类：影视类、音乐类、娱乐类、体育类、休闲类、少儿类、游戏类、教育类、美容养生类、金融证券类，供您全家随心挑选。喜欢什么，想看什么，您就订什么，一切由您说了算！</p>
+     <div class="wrapper_boxrig" style="margin-left:1%;">
+            <p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">高清频道</a> 》 <a href="" target="_blank">业务介绍</a></p>
+            <div class="business_cont">
+                <p>高清频道是高清晰度电视频道，是有线电视技术基于标清基本频道之上发展起来的一项高级业务。高清电视图像采用高清晰度或三维立体摄像机拍摄、高清晰度电视编辑设备编辑制作、有线电视同轴电缆千兆高带宽传输（传输流量大，图像传速快）。而且必须通过高清机顶盒、高清电视机或者3D高清电视机接收。因此，高清电视屏幕最终传输出的图像更清晰，令人赏心悦目！</p>
+                <p>电视图像按照图像分辨率分为标清、高清、超高清、3D高清，分辨率越高，图像越清晰。标清电视图像显示分辨率为720p的图像格式，高清电视的图像分辨率为1080i或1080p，超高清电视的图像分辨率为1080p的两倍以上。</p>
+                <p>电视机按照图像清晰度分为：标清电视机（即标准清晰度电视SDTV）、高清电视机（即高清晰度电视HDTV）、超高清电视机（即超高清晰度电视UHDTV）、3D高清电视机（即三维立体电视，3DTV），请您参阅您家里的电视机说明书确认您的电视机类型。</p>
+                <p>有线电视机顶盒同样分为标清机顶盒（只能接收标清电视信号）、高清机顶盒（能同时接收高清、超高清、3D高清、标清电视信号）。请您参阅您家里的机顶盒说明书确认。</p>
             </div>
             
             
        
            
         </div>
-	</div>
+    </div>
 </div>
 <!--底部-->
 <div class="footer">
-	<p style="margin-left:250px"><span style="margin-right:35px;">赣ICP备10200922号</span><span style="margin-right:35px;"> 版权所有：南昌广电网络 </span><span> 制作维护：南昌广电全媒体科技有限公司</span></p>
+    <p style="margin-left:250px"><span style="margin-right:35px;">赣ICP备10200922号</span><span style="margin-right:35px;"> 版权所有：南昌广电网络 </span><span> 制作维护：南昌广电全媒体科技有限公司</span></p>
     <p style="margin-left:250px"><span style="margin-right:52px;">客服热线：95130</span> <span>通讯地址：江西省南昌市红谷滩新区绿茵路1号南昌广电大楼</span></p>
 </div>
 </div>

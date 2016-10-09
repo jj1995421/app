@@ -42,10 +42,10 @@
 	<div class="wrapper_box wrap_boxs">
         <div class="menu_left">
         	<ul>
-            	<li><a href="service.html" >业务办理</a></li>
-                <li><a href="service_hot.html" >热点答疑</a></li>
-                <li><a href="service_solve.html" >简易排障</a></li>
-                <li><a href="service_pay.html" >缴费方式</a></li>
+            	<li><a href="{{url('/service')}}" >业务办理</a></li>
+                <li><a href="{{url('service_hot')}}" >热点答疑</a></li>
+                <li><a href="{{url('service_solve')}}" >简易排障</a></li>
+                <li><a href="{{url('service_pay')}}" >缴费方式</a></li>
             </ul>
         </div>
         <!--右侧列表-->

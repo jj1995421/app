@@ -7,7 +7,7 @@
                     </div>
                     <div class="mws-panel-body no-padding">
                             	<!-- {{session('error')}} -->
-                    	<form class="mws-form" action="/admin/lunbo/insert" method="post">
+                    	<form class="mws-form" action="/admin/lunbo/insert" method="post" enctype="multipart/form-data">
                             @if (count($errors) > 0)
                     		<div class="mws-form-message error">
                     				<ul>

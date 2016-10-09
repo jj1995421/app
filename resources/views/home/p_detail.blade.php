@@ -26,13 +26,13 @@
 	<ul>
         <li><a href="{{url('/index')}}" >首页</a></li>
         <li><a href="{{url('/news_list')}}" >新闻动态</a></li>
-        <li><a href="profile">公司概况</a></li>
-        <li><a href="{{url('/business')}}" >业务介绍</a></li>
-        <li><a href="" target="_blank">通知公告</a></li>
-        <li><a href="" target="_blank">用户服务</a></li>
-        <li><a href="" target="_blank">企业文化</a></li>
-        <li><a href="" target="_blank">党群窗口</a></li>
-        <li><a href="" target="_blank">政策法规</a></li>
+        <li><a href="{{url('/profile')}}" >公司概况</a></li>
+        <li><a href="{{url('/business')}}">业务介绍</a></li>
+        <li><a href="{{url('/tz_list')}}" >通知公告</a></li>
+        <li><a href="{{url('/service')}}" >用户服务</a></li>
+        <li><a href="{{url('/culture')}}" >企业文化</a></li>
+        <li><a href="{{url('/dq_list')}}">党群窗口</a></li>
+        <li><a href="{{url('/zc_list')}}" >政策法规</a></li>
     </ul>
 </div>
 <!--导航部分 end-->

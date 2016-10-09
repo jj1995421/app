@@ -51,7 +51,7 @@
             <td class=" ">{{$v['title']}}</td>
             <td class=" ">{{$v['urls']}}</td>
             <td class=" "><img src="{{$v['pic']}}" width="100" alt=""></td>
-            <td class=" ">&nbsp;&nbsp;&nbsp;<a href="/admin/lunbo/edit/{{$v['id']}}"  style="color:black;font-size:16px;"><i class="icon-pencil"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td class=" ">&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <a href="/admin/lunbo/delete/{{$v['id']}}" style="color:black;font-size:16px;"><i class="icon-remove"></i></a></td>
           </tr>
           @endforeach

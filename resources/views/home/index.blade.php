@@ -40,18 +40,17 @@
         <!--焦点图-->
             <div class="focusBox" >
                 <ul class="pic" style="position: relative; width: 320px; height: 240px;">
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: list-item;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
-                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://sc.chinaz.com/" target="_blank"><img src="/home/images/banner1.jpg"></a></li>
+                @foreach($lunbo as $k=>$v)
+                <li style="position: absolute; width: 320px; left: 0px; top: 0px; display: none;"><a href="http://{{$v['urls']}}" target="_blank"><img src="{{$v['pic']}}"></a></li>
+                @endforeach
+                
                 </ul>
                 <div class="txt-bg"></div>
                 <div class="txt">
                 <ul>
-                <li style="bottom: -36px;"><a href="http://sc.chinaz.com/">1Quiet</a></li>
-                <li style="bottom: -36px;"><a href="http://sc.chinaz.com/">2DoubleLi</a></li>
-                <li style="bottom: 0px;"><a href="http://sc.chinaz.com/">3Quiet</a></li>
-                <li style="bottom: -36px;"><a href="http://sc.chinaz.com/">4Quiet</a></li>
+                @foreach($lunbo as $k=>$v)
+                <li style="bottom: -36px;"><a href="http://{{$v['urls']}}">{{$v['title']}}</a></li>
+                @endforeach
                 </ul></div>
                 <ul class="num">
                 <li class=" "><a>1</a><span></span></li>
@@ -153,21 +152,21 @@
                 <img src="/home/images/ad_service1.jpg" />
                 <div class="ad_service_cont">
                     <p><span class="title" style="color:#5FD5D2">标清付费频道</span><span class="e_title">Standard pay channel</span></p>
-                    <p><a href="{{url('/board_fu')}}" ><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
+                    <p><a href="{{url('/board_fu')}}" ><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="{{url('')}}" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
                 </div>
             </li>
             <li>
                 <img src="/home/images/ad_service2.jpg" />
                 <div class="ad_service_cont">
                     <p><span class="title" style="color:#BA0843">高清频道</span><span class="e_title">HD Channel</span></p>
-                    <p><a href="" target="_blank"><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
+                    <p><a href="{{url('/board_gao')}}" target="_blank"><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="{{url('/board_gao_offer')}}" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
                 </div>
             </li>
             <li>
                 <img src="/home/images/ad_service3.jpg" />
                 <div class="ad_service_cont">
                     <p><span class="title" style="color:#DEAC35">轮播影院</span><span class="e_title">Home Theater</span></p>
-                    <p><a href="" target="_blank"><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
+                    <p><a href="{{url('/board_lun')}}" target="_blank"><span class="ad_service_com">业务介绍&nbsp;》</span></a><a href="" target="_blank"><span class="ad_service_com">业务办理&nbsp;》</span></a></p>
                 </div>
             </li>
         </ul>
@@ -259,10 +258,10 @@
         <div class="service">
             <img src="/home/images/userservice.png" style="  margin-top: 10px;"/>
             <ul>
-                <li><a href="" target="_blank">业务办理</a></li>
-                <li><a href="" target="_blank">简易排障</a></li>
-                <li><a href="" target="_blank">热点答疑</a></li>
-                <li><a href="" target="_blank">缴费方式</a></li>
+                <li><a href="{{url('/service')}}" >业务办理</a></li>
+                <li><a href="{{url('/service_solve')}}" >简易排障</a></li>
+                <li><a href="{{url('/service_hot')}}" >热点答疑</a></li>
+                <li><a href="{{url('/service_pay')}}" >缴费方式</a></li>
             </ul>
         </div>
         <!--营业厅-->

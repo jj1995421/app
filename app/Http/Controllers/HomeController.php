@@ -47,8 +47,10 @@ class HomeController extends Controller
       ->skip(0)
       ->take(7)
       ->get();
+      //轮播
+      $lunbo = DB::table('lunbo')->get();
       //分配变量到view
-      return view('home.index',['sqq'=>$arcs,'sqq2'=>$arcs2,'sqq3'=>$arcs3,'sqqq'=>$arcss,'arcsq'=>$arcsq]);
+      return view('home.index',['sqq'=>$arcs,'sqq2'=>$arcs2,'sqq3'=>$arcs3,'sqqq'=>$arcss,'arcsq'=>$arcsq,'lunbo'=>$lunbo]);
 
    }
 
@@ -120,10 +122,87 @@ class HomeController extends Controller
       return view('home.service');
    }
 
+   //热点答疑
+   public function hot()
+   {
+      return view('home.service_hot');
+   }
+
+   //简易排障
+   public function solve()
+   {
+      return view('home.service_solve');
+   }
+
+   //缴费方式
+   public function pay()
+   {
+      return view('home.service_pay');
+   }
+
    //前台进入标清业务介绍页
    public function bboard()
    {
       return view('yewu.board_fu');
+   }
+
+   //高清业务介绍页
+   public function gao()
+   {
+      return view('yewu.board_gao');
+   }
+
+   // 高清业务指南
+   public function gaouse()
+   {
+      return view('yewu.board_gao_use');
+   }
+
+   public function gaouof()
+   {
+      return view('yewu.board_gao_offer');
+   }
+
+  public function lun()
+   {
+      return view('yewu.board_lun');
+   }
+
+   public function lunuse()
+   {
+      return view('yewu.board_lun_use');
+   }
+   //家庭宽带
+   public function hkuan()
+   {
+      return view('yewu.kuan_home');
+   }
+   //集团宽带
+   public function jtkuan()
+   {
+      return view('yewu.kuan_group');
+   }
+   //影视点播 业务介绍
+   public function dian()
+   {
+      return view('yewu.dian_bo');
+   }
+   //影视点播 使用指南
+   public function usedian()
+   {
+      return view('yewu.dian_bo_use');
+   }
+
+   //电视回看
+   public function back()
+   {
+      return view('yewu.dian_back');
+   }
+
+   //回看指南
+   public function useback()
+   {
+      return view('yewu.dian_back_use');
    }
 
 }
