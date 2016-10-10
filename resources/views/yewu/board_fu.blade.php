@@ -54,15 +54,15 @@
                      <li><a class="selected" >标清专业付费频道</a>
                          <ul>
                              <li><a href="{{url('/board_fu')}}">业务介绍</a></li>
-                             <!-- <li><a href="#">使用指南</a></li>
-                             <li><a href="#">业务办理</a></li> -->
+                             <!-- <li><a href="#">使用指南</a></li> -->
+                             <li><a href="{{url('/board_fu_offer')}}">业务办理</a></li>
                          </ul>
                      </li>
                      <li><a class="selected" >轮播影院</a>
                          <ul>
                              <li><a href="{{url('/board_lun')}}">业务介绍</a></li>
                              <li><a href="{{url('/board_lun_use')}}">使用指南</a></li>
-                            <!-- <li><a href="#">业务办理</a></li>-->
+                             <li><a href="{{url('/board_lun_offer')}}">业务办理</a></li>
                          </ul>
                      </li>
                      </ul>

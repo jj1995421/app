@@ -16,6 +16,17 @@
 </head>
 
 <body>
+<script type="text/javascript">
+$(function(){
+$(".subNav").click(function(){
+			$(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd")
+			$(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt")
+			
+			// 修改数字控制速度， slideUp(500)控制卷起速度
+			$(this).next(".navContent").slideToggle(500).siblings(".navContent").slideUp(500);
+	})	
+})
+</script>
 <!--头部-->
 <div class="top">
 	<img src="/home/images/top.jpg" />
@@ -107,20 +118,12 @@
         </div>
         <!--右侧列表-->
         <div class="wrapper_boxrig" style="margin-left:1%;">
-        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">高清频道</a> 》 <a href="" target="_blank">使用指南</a></p>
+        	<p class="tit"><a href="" target="_blank">首页</a> 》 <a href="" target="_blank">标清付费频道</a> 》 <a href="" target="_blank">业务办理</a></p>
         	<div class="business_cont">
-              <p class="title">高清频道（使用指南）</p>
+            <p class="title">标清付费频道（业务办理）</p>
             <img src="/home/images/line.jpg" width="100%"/>
-            	<p>收看高清频道的有线电视用户，打开电视机和机顶盒之后，在确认该频道已订购开通的前提下，请用遥控器按以下示意图操作：</p>
-                <p> 以收看“高清频道”的高清体育为例：</p>
-                <p>第一步：按遥控器“导视”键或“频道”键，进入“节目指南”</p>
-                <p>第二步：按遥控器中间的“左右"键，选择频道类型，选择到”高清频道”</p>
-                <p>第三步：按遥控器中间的”上下“键，选择专业频道名称，选择到”高清体育“后，按”确认“键，就可观看频道</p>
+            	
             </div>
-            
-            
-       
-           
         </div>
 	</div>
 </div>

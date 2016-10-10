@@ -87,14 +87,14 @@
                     </div>
                     <div class="channel_box">
                     	<p class="channel_tit">高清频道</p>
-                        <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
+                        <p class="channel_de"><span><a href="{{url('/board_gao')}}" target="_blank">业务介绍</a></span><span><a href="{{url('/board_gao_use')}}" target="_blank">使用指南</a></span><span><a href="{{url('/board_gao_offer')}}" target="_blank">业务办理</a></span></p>
                     </div>
                     <div class="channel_box" style="background:#C9C9C9">
                     	<p class="channel_tit">标清专业付费频道</p>
-<p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
+<p class="channel_de"><span><a href="{{url('/board_fu')}}" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="{{url('/board_fu_offer')}}" target="_blank">业务办理</a></span></p>                    </div>
 					                    <div class="channel_box">
                     	<p class="channel_tit">轮播影院</p>
-                        <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
+                        <p class="channel_de"><span><a href="{{url('/board_lun')}}" target="_blank">业务介绍</a></span><span><a href="{{url('/board_lun_use')}}" target="_blank">使用指南</a></span><span><a href="{{url('/board_lun_offer')}}" target="_blank">业务办理</a></span></p>
                     </div>
                 </div>
                 <!--宽带-->
@@ -108,11 +108,11 @@
                     </div>
                     <div class="channel_box">
                     	<p class="channel_tit">家庭宽带</p>
-                        <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
+                        <p class="channel_de"><span><a href="{{url('/kuan_home')}}" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
                     </div>
                     <div class="channel_box" style="background:#C9C9C9">
                     	<p class="channel_tit">集团专线业务</p>
-<p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
+<p class="channel_de"><span><a href="{{url('/kuan_group')}}" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
 					
                 </div>
                 <!--点播-->
@@ -124,11 +124,11 @@
                     </div>
                     <div class="channel_box">
                     	<p class="channel_tit">影视点播</p>
-                        <p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
+                        <p class="channel_de"><span><a href="{{url('/dian_bo')}}" target="_blank">业务介绍</a></span><span><a href="{{url('/dian_bo_use')}}" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>
                     </div>
                     <div class="channel_box" style="电视回看:#C9C9C9">
                     	<p class="channel_tit">电视回看</p>
-<p class="channel_de"><span><a href="" target="_blank">业务介绍</a></span><span><a href="" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
+<p class="channel_de"><span><a href="{{url('/dian_back')}}" target="_blank">业务介绍</a></span><span><a href="{{url('/dian_back_use')}}" target="_blank">使用指南</a></span><span><a href="" target="_blank">业务办理</a></span></p>                    </div>
                 </div>
             </div>
             

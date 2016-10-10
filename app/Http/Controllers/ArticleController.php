@@ -111,10 +111,14 @@ class ArticleController extends Controller
         $arcs = DB::table('articles')
         ->where('id','=',$id)
         ->first();
-
+        //上一条
+        $ar['pre'] = DB::table('articles')->where('id','<',$id)->orderBy('id','desc')->first();
+        //下一条
+        $ar['next'] = DB::table('articles')->where('id','>',$id)->orderBy('id','asc')->first();
         //展现内容
         return view('home.p_detail',[
             'arcs'=>$arcs,
+            'ar'=>$ar,
             'cates'=>CateController::getTopCate(),
             ]);
     }

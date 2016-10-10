@@ -89,6 +89,9 @@ Route::get('service_pay','HomeController@pay');
 //标清业务介绍页
 Route::get('/board_fu','HomeController@bboard');
 
+//标清业务付费
+Route::get('/board_fu_offer','HomeController@boffer');
+
 //高清业务介绍
 Route::get('/board_gao','HomeController@gao');
 
@@ -113,6 +116,9 @@ Route::get('/dian_bo_use','HomeController@usedian');
 
 //电视回看_业务介绍
 Route::get('/dian_back','HomeController@back');
+
+//轮播业务_办理
+Route::get('/board_lun_offer','HomeController@loffer');
 
 //回看指南
 Route::get('/dian_back_use','HomeController@useback');

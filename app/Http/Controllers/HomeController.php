@@ -205,4 +205,16 @@ class HomeController extends Controller
       return view('yewu.dian_back_use');
    }
 
+   //标清付费页
+   public function boffer()
+   {
+      return view('yewu.board_fu_offer');
+   }
+
+   //轮播业务办理
+   public function loffer()
+   {
+      return view('yewu.board_lun_offer');
+   }
+
 }

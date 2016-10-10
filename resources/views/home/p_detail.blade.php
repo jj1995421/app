@@ -80,17 +80,26 @@
                 	{!!$arcs['content']!!}
                     <img src="{{$arcs['pic']}}" />
                 </div>
-<!--                 <div class="other_new">
-                	<p><a href="">上一条：</a></p>
-                    <p><a href="">下一条：集团公司人力资源部负责人、对应公司督导责任人全程参与</a></p>
-                </div> -->
+                <div class="other_new">
+                    @if($ar['pre'])
+                    <p><a href="{{url('p_detail-'.$ar['pre']['id'])}}">上一条：{{$ar['pre']['title']}}</a></p>
+                    @else
+                        <p><span>没有上一条了</span></p>
+                    @endif
+
+                    @if($ar['next'])
+                    <p><a href="{{url('p_detail-'.$ar['next']['id'])}}">下一条：{{$ar['next']['title']}}</a></p>
+                    @else
+                       <p><span>没有下一条了</span></p> 
+                    @endif
+                </div>
             </div>       
            
         </div>
 	</div>
 </div>
 <!--底部-->
-<div class="footer">
+<div class="footer"> 
 	<p style="margin-left:250px"><span style="margin-right:35px;">赣ICP备10200922号</span><span style="margin-right:35px;"> 版权所有：南昌广电网络 </span><span> 制作维护：南昌广电全媒体科技有限公司</span></p>
     <p style="margin-left:250px"><span style="margin-right:52px;">客服热线：95130</span> <span>通讯地址：江西省南昌市红谷滩新区绿茵路1号南昌广电大楼</span></p>
 </div>
