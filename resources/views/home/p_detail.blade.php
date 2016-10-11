@@ -56,11 +56,9 @@
             <div class="news_box">
             	<p class="title">新闻动态</p>
                 <ul>
-                	<li><a href="" target="_blank">湖南有线集团获得央视3568频道</a></li>
-                    <li><a href="" target="_blank">湖南有线集团获得央视3568频道</a></li>
-                    <li><a href="" target="_blank">湖南有线集团获得央视3568频道</a></li>
-                    <li><a href="" target="_blank">湖南有线集团获得央视3568频道</a></li>
-                    <li><a href="" target="_blank">湖南有线集团获得央视3568频道</a></li>
+                @foreach($arcse as $k=>$v)
+                	<li><a href="{{url('p_detail-'.$v['id'])}}" target="_blank">{{$v['title']}}</a></li>
+                @endforeach
                 </ul>
             </div>
             <div class="news_r_box" style="border-bottom:none;">

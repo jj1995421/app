@@ -111,6 +111,15 @@ class ArticleController extends Controller
         $arcs = DB::table('articles')
         ->where('id','=',$id)
         ->first();
+
+        //新闻动态
+          $arcse = DB::table('articles')
+          ->whereIn('cate_id',[1])
+          ->orderBy('id','desc')
+          ->skip(0)
+          ->take(5)
+          ->get();
+
         //上一条
         $ar['pre'] = DB::table('articles')->where('id','<',$id)->orderBy('id','desc')->first();
         //下一条
@@ -120,6 +129,7 @@ class ArticleController extends Controller
             'arcs'=>$arcs,
             'ar'=>$ar,
             'cates'=>CateController::getTopCate(),
+            'arcse'=>$arcse
             ]);
     }
 }

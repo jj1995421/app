@@ -9,7 +9,7 @@
 .news_box{width:99%;height:204px;border:1px solid #ccc;border-top:3px solid #989393;}
 .news_box .title{line-height:35px;height:35px;border-bottom:1px solid #ccc;padding-left:13%;font-size: 16px}
 .news_box ul{margin-top: 10px;}
-.news_box ul li{list-style:disc;  list-style-position: inside;width:100%;height:30px;line-height:30px;overflow:hidden;font-size: 10px; padding-left: 6%;color:gray;}
+.news_box ul li{list-style:disc;  list-style-position: inside;width:94%;height:30px;line-height:30px;overflow:hidden;font-size: 10px; padding-left: 6%;color:gray;}
 .news_box ul li a{color:gray;}
 .news_box ul li a:hover{color:red;}
 .wrapper_boxleft .news_r_box{width:99%;border:1px solid #ccc;border-top:none;}
